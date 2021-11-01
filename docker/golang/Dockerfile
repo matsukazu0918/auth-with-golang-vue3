@@ -11,3 +11,4 @@ WORKDIR /go/src/api
 COPY ./api ./
 
 RUN go mod download
+RUN go build -o web-server .
